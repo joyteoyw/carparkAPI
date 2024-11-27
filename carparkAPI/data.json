@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "model": "Toyota Corolla",
+        "colour": "Red",
+        "lot": 5
+    },
+    {
+        "id": 2,
+        "model": "Honda Civic",
+        "colour": "Blue",
+        "lot": 12
+    },
+    {
+        "id": 3,
+        "model": "Tesla Model 3",
+        "colour": "White",
+        "lot": 8
+    },
+    {
+        "id": 4,
+        "model": "BYD Seal",
+        "colour": "Black",
+        "lot": 19
+    },
+    {
+        "id": 5,
+        "model": "Chevrolet Camaro",
+        "colour": "Yellow",
+        "lot": 3
+    },
+    {
+        "id": 6,
+        "model": "BMW 3 Series",
+        "colour": "Silver",
+        "lot": 7
+    },
+    {
+        "id": 7,
+        "model": "Audi A4",
+        "colour": "Grey",
+        "lot": 15
+    },
+    {
+        "id": 12,
+        "model": "BYD Dolphin",
+        "colour": "Red",
+        "lot": 123
+    }
+]
