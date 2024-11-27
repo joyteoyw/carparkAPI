@@ -20,7 +20,7 @@ You can view the frontend UI hosted on GitHub Pages at: [joyteoyw.github.io](htt
 
 ## Disclaimers
 
-- The frontend UI is designed to contextualize the CarparkAPI and provide a (hopefully) interesting experience when testing out the backend APIs.
+- The frontend UI is designed to contextualize the CarparkAPI and provide a (hopefully) more interesting experience when testing out the backend APIs.
   
 - The **'GET /car/lots'** API is not part of the 3 defined API requirements and is only meant for contextualization purposes. It is not intended for grading.
 
