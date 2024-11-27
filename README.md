@@ -10,6 +10,10 @@ To set up the environment, run the following command in the root folder: `pip in
 
 To run unit tests for the backend API, execute: `pytest` from the root folder.
 
+## Frontend GitHub Pages Link:
+
+You can view the frontend UI hosted on GitHub Pages at: [joyteoyw.github.io](https://joyteoyw.github.io/)
+
 ## Disclaimers
 
 - The frontend UI is designed to contextualize the CarparkAPI and provide a (hopefully) interesting experience when testing out the backend APIs.
