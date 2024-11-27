@@ -6,6 +6,10 @@ This is a simple frontend and backend implementation of a Carpark API, designed 
 
 To set up the environment, run the following command in the root folder: `pip install -r "requirements.txt"`
 
+## Running carparkAPI Locally
+
+To run carparkAPI locally, execute: `python carparkapi.py` from the root folder.
+
 ## Running Unit Tests
 
 To run unit tests for the backend API, execute: `pytest` from the root folder.
