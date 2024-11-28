@@ -58,5 +58,10 @@ class CarService:
 
 
     def get_lots(self):
+        self._load_data()
         lots = {car['lot'] : f"{car['colour']} {car['model']}" for car in self.cars}
         return lots
+    
+    def get_cars(self):
+        self._load_data()
+        return self.cars

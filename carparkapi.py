@@ -47,17 +47,24 @@ def add_car():
 def delete_car(id):
     try:
         car_service.delete_car(id)
-        return Response(json.dumps({"response": "success", "message": "Car deleted successfully"}), mimetype="application/json", status=200)
+        return Response(json.dumps({"response": "success", "message": "Car removed from carpark successfully"}), mimetype="application/json", status=200)
     except ValueError as e:
         return Response(json.dumps({"response": "error", "error": str(e)}), mimetype="application/json", status=404)
 
-# Additional contextual API (not for grading)
+# Additional contextual APIs (not intended for grading)
 @app.route('/car/lots', methods=['GET'])
 def get_car_lots():
     lots = car_service.get_lots()
     if lots:
         return Response(json.dumps({"response": "success", "data": lots}), mimetype="application/json", status=200)
-    return Response(json.dumps({"response": "error", "error": "Parking lot data not found."}), mimetype="application/json", status=404)
+    return Response(json.dumps({"response": "error", "error": "No occupied parking lots."}), mimetype="application/json", status=404)
+
+@app.route('/cars', methods=['GET'])
+def get_cars():
+    cars = car_service.get_cars()
+    if cars:
+        return Response(json.dumps({"response": "success", "data": cars}), mimetype="application/json", status=200)
+    return Response(json.dumps({"response": "error", "error": "No cars in carpark."}), mimetype="application/json", status=404)
 
 # Error handling for missing or invalid API inputs
 @app.errorhandler(404)
