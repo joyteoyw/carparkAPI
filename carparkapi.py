@@ -20,6 +20,9 @@ def log_request():
     if request.method == 'POST' or request.method == 'PUT':
         app.logger.info(f"Request Body: {request.get_data()}")
         
+@app.route('/')
+def welcome():
+    return 'Welcome to carparkAPI'
 
 @app.route('/car/<int:id>', methods=['GET'])
 def get_car(id):
