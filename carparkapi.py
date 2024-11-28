@@ -62,4 +62,4 @@ def not_found_error(error):
     return Response(json.dumps({"response": "error", "error": str(error)}), mimetype="application/json", status=404)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=80, debug=True)
+    app.run(debug=True)

@@ -2,3 +2,4 @@ Flask
 Flask-Testing
 pytest
 flask-cors
+gunicorn
