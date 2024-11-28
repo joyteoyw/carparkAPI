@@ -10,6 +10,12 @@ To set up the environment, run the following command in the root folder in a ter
 
 To run carparkAPI locally, execute: `python carparkapi.py` from the root folder in a terminal.
 
+## Running carparkAPI Locally using Gunicorn
+
+To run carparkAPI locally, execute: `gunicorn -w 4 -b 0.0.0.0:8000 carparkapi:app` from the root folder in a terminal.
+
+To terminate instances, excute `lsof -i :8000` and `kill -9 <PID>`.
+
 ## Running Unit Tests
 
 To run unit tests for the backend API, execute: `pytest` from the root folder in a terminal.

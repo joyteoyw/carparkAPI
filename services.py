@@ -5,6 +5,9 @@ class CarService:
 
     def __init__(self, dataFile):
         self.dataFile = dataFile
+        self._load_data()
+
+    def _load_data(self):
         with open(self.dataFile, 'r') as file:
             self.cars = json.load(file)
 
@@ -13,6 +16,7 @@ class CarService:
             json.dump(data, file, indent=4)
     
     def get_car_by_id(self, id):
+        self._load_data()
         for c in self.cars:
             if c['id'] == id:
                 return c
